@@ -1,57 +1,64 @@
-1   /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; advance_leapfrog!; line: 46
-3   abstractarray.jl; trailingsize; line: 54
+1   abstractarray.jl; checkbounds; line: 74
+1   abstractarray.jl; checkbounds; line: 95
 1   array.jl; unsafe_copy!; line: 38
-1   range.jl; Range1; line: 27
-2   range.jl; colon; line: 38
-2   range.jl; maximum; line: 101
-     625 client.jl; _start; line: 429
-      625 client.jl; run_repl; line: 186
-         625 client.jl; eval_user_input; line: 109
-               625 loading.jl; include_from_node1; line: 114
-                 625 boot.jl; include; line: 238
-                      624 profile.jl; anonymous; line: 24
-                          1   /Users/nicholassenno/Desktop/HPC/HW4/optimized_HW4_leapfrog.jl; optimized_integrate_leapfrog!; line: 11
-                          10  /Users/nicholassenno/Desktop/HPC/HW4/optimized_HW4_leapfrog.jl; optimized_integrate_leapfrog!; line: 17
-                          1   /Users/nicholassenno/Desktop/HPC/HW4/optimized_HW4_leapfrog.jl; optimized_integrate_leapfrog!; line: 22
-                          1   /Users/nicholassenno/Desktop/HPC/HW4/optimized_HW4_leapfrog.jl; optimized_integrate_leapfrog!; line: 26
-                          2   /Users/nicholassenno/Desktop/HPC/HW4/optimized_HW4_leapfrog.jl; optimized_integrate_leapfrog!; line: 28
-                          474 /Users/nicholassenno/Desktop/HPC/HW4/optimized_HW4_leapfrog.jl; optimized_integrate_leapfrog!; line: 31
-                                3   /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; advance_leapfrog!; line: 46
+2   int.jl; <; line: 228
+     881 client.jl; _start; line: 429
+      881 client.jl; run_repl; line: 186
+         881 client.jl; eval_user_input; line: 109
+               881 loading.jl; include_from_node1; line: 114
+                 881 boot.jl; include; line: 238
+                      881 profile.jl; anonymous; line: 23
+                          2   /Users/nicholassenno/Desktop/HPC/HW4/optimized_HW4_leapfrog.jl; optimized_integrate_leapfrog!; line: 22
+                           1 deepcopy.jl; deepcopy_internal; line: 45
+                          1   /Users/nicholassenno/Desktop/HPC/HW4/optimized_HW4_leapfrog.jl; optimized_integrate_leapfrog!; line: 28
+                          685 /Users/nicholassenno/Desktop/HPC/HW4/optimized_HW4_leapfrog.jl; optimized_integrate_leapfrog!; line: 31
+                                7   /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; advance_leapfrog!; line: 46
                                 1   /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; advance_leapfrog!; line: 49
-                                93  /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; advance_leapfrog!; line: 51
-                                 4  range.jl; colon; line: 38
+                                155 /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; advance_leapfrog!; line: 51
+                                 1   range.jl; Range1; line: 28
+                                 3   range.jl; colon; line: 38
+                                  2 range.jl; Range1; line: 27
                                   1 range.jl; Range1; line: 28
-                                26  /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; advance_leapfrog!; line: 52
-                                 1  /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; update_derivs_vel!; line: 23
-                                 5  /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; update_derivs_vel!; line: 24
-                                 12 /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; update_derivs_vel!; line: 25
-                                 3  /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; update_derivs_vel!; line: 26
-                                 1  /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; update_derivs_vel!; line: 27
-                                 3  /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; update_derivs_vel!; line: 28
-                                69  /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; advance_leapfrog!; line: 53
+                                15  /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; advance_leapfrog!; line: 52
+                                 1 /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; update_derivs_vel!; line: 18
+                                 1 /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; update_derivs_vel!; line: 21
+                                 2 /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; update_derivs_vel!; line: 23
+                                 1 /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; update_derivs_vel!; line: 24
+                                 4 /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; update_derivs_vel!; line: 26
+                                 4 /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; update_derivs_vel!; line: 27
+                                 1 /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; update_derivs_vel!; line: 28
+                                95  /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; advance_leapfrog!; line: 53
+                                 1  range.jl; colon; line: 38
+                                  1 range.jl; Range1; line: 27
                                 3   /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; advance_leapfrog!; line: 54
-                                 2 /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; update_derivs_pos!; line: 6
-                                117 /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; advance_leapfrog!; line: 55
+                                 1 /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; update_derivs_pos!; line: 6
+                                 1 /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; update_derivs_pos!; line: 8
+                                 1 /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; update_derivs_pos!; line: 10
+                                125 /Users/nicholassenno/Desktop/HPC/HW4/HW4_leapfrog.jl; advance_leapfrog!; line: 55
                                  1   range.jl; colon; line: 38
-                          6   /Users/nicholassenno/Desktop/HPC/HW4/optimized_HW4_leapfrog.jl; optimized_integrate_leapfrog!; line: 35
-                          117 /Users/nicholassenno/Desktop/HPC/HW4/optimized_HW4_leapfrog.jl; optimized_integrate_leapfrog!; line: 40
-                           4  abstractarray.jl; trailingsize; line: 54
-                           2  array.jl; copy!; line: 48
-                           1  array.jl; copy!; line: 51
-                            1 array.jl; unsafe_copy!; line: 38
-                           6  array.jl; setindex!; line: 453
-                           62 array.jl; setindex!; line: 454
-                            2  abstractarray.jl; checkbounds; line: 95
-                             2 abstractarray.jl; checkbounds; line: 63
-                            60 abstractarray.jl; checkbounds; line: 96
-                             58 abstractarray.jl; checkbounds; line: 74
-                              5  range.jl; maximum; line: 101
-                              3  range.jl; minimum; line: 100
+                                  1 range.jl; Range1; line: 27
+                                1   range.jl; colon; line: 38
+                          14  /Users/nicholassenno/Desktop/HPC/HW4/optimized_HW4_leapfrog.jl; optimized_integrate_leapfrog!; line: 35
+                          169 /Users/nicholassenno/Desktop/HPC/HW4/optimized_HW4_leapfrog.jl; optimized_integrate_leapfrog!; line: 40
+                           2  abstractarray.jl; trailingsize; line: 54
+                           1  array.jl; copy!; line: 48
+                           9  array.jl; copy!; line: 51
+                            8 array.jl; unsafe_copy!; line: 38
+                             3 array.jl; unsafe_copy!; line: 31
+                             4 array.jl; unsafe_copy!; line: 33
+                           5  array.jl; setindex!; line: 453
+                           75 array.jl; setindex!; line: 454
+                            1  abstractarray.jl; checkbounds; line: 95
+                             1 abstractarray.jl; checkbounds; line: 63
+                            74 abstractarray.jl; checkbounds; line: 96
+                             74 abstractarray.jl; checkbounds; line: 74
+                              2  range.jl; maximum; line: 101
+                              6  range.jl; minimum; line: 100
                                 2 int.jl; <; line: 228
                                 1 operators.jl; >; line: 19
-                             1  abstractarray.jl; checkbounds; line: 75
-                             1  range.jl; maximum; line: 101
-                           1  array.jl; setindex!; line: 462
-                           2  array.jl; setindex!; line: 464
-                           2  array.jl; setindex!; line: 465
+                           3  array.jl; setindex!; line: 462
+                           3  array.jl; setindex!; line: 464
+                           4  array.jl; setindex!; line: 465
+                           1  array.jl; setindex!; line: 469
                            2  range.jl; colon; line: 38
+                          1   abstractarray.jl; trailingsize; line: 56

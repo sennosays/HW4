@@ -14,21 +14,17 @@ dt = 0.01;
 integrate_leapfrog_student(initial_state,dt,duration);
 integrate_leapfrog!(initial_state,dt,duration); 
 
-initial_state = set_initial_state!(); 
-#Profile.init(1000000, 0.0008); 
+initial_state = set_initial_state!();  
 
 @profile (for j in 1:2; integrate_leapfrog_student(initial_state,dt,duration); end); 
 student_data = copy(Profile.fetch()); 
 Profile.clear();
 
-@profile (for k in 1:50; optimized_integrate_leapfrog!(initial_state,dt,duration);end); 
-#Profile.print(cols=200); 
+@profile (for k in 1:80; optimized_integrate_leapfrog!(initial_state,dt,duration);end); 
 optimized_data = copy(Profile.fetch()); 
 Profile.clear();  
 
-Profile.print(STDOUT,optimized_data,cols=200); 
-
-@profile (for i in 1:50; integrate_leapfrog!(initial_state,dt,duration);end); 
+@profile (for i in 1:80; integrate_leapfrog!(initial_state,dt,duration);end); 
 prof_data = copy(Profile.fetch());
 
 initial_state = set_initial_state!();
@@ -50,8 +46,7 @@ close(fps);
 fpo = open("terminal_optimized_profile.txt","w"); 
 Profile.print(fpo,optimized_data,cols=200); 
 close(fpo);
-
-#Profile.print(STDOUT,optimized_data,cols=200); 
+ 
 println("The prof's program runs ",student_time/prof_time,"x faster than the students"); 
 println("The optimized function runs ",prof_time/optimized_time,"x faster than the prof integrator"); 
 
